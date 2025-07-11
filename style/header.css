@@ -1,0 +1,303 @@
+     .search-bar {
+        flex:1;
+       height: 20px;
+       padding: 10px;
+       font-size: 16px;
+       border-width: 1px;
+       border-color: gray;
+       border-style: solid;
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 5px rgba(0,0,0,0.5);
+        width: 0;
+      }
+      .search-bar::placeholder{
+        font-family: arial;
+        font-size: 16px;
+      }
+      .search-button {
+         height: 40px;
+         position: relative;
+        width: 50px;
+      }
+      .search-button .tooltip {
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top:4px ;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+         white-space: nowrap;
+        transition: opacity 0.15;
+      }
+      .search-button:hover .tooltip {
+        opacity: 1;
+
+
+      }
+      .voice-search-button {
+       height: 40px;
+         position: relative;
+        width: 50px;
+      
+      }
+      .voice-search-button .tooltip{
+      
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top:4px ;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15;
+        /* display: flex;
+        justify-content: center; */
+        white-space: nowrap;
+      }
+    .voice-search-button:hover .tooltip {
+       opacity: 1;
+
+
+    }
+     
+      .header {
+        height: 55px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        background-color: white;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(148, 140, 140);
+        }
+        .right-section{
+            
+            width: 200px;
+            display: flex;
+            justify-content: space-between;           
+        }
+        .left-section{
+        
+            width: 200px;
+            align-items: center;
+
+        }
+        .youtube-logo{
+            height: 20px;
+        }
+        .hamburger-menu{
+            height: 24px;
+            gap: 50px;
+            margin-top: 15px;
+            margin-left: 5px;
+            margin-right: 20px;
+        }
+        .middle-section{
+            
+            flex: 1;
+            margin-left: 70px;
+            margin-right: 35px;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .upload-button {
+            width: 40px;
+            height: 30px;
+            margin-left: 8px;
+             margin-top: 10px;
+        }
+        .upload-button > .jhatka {
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top:4px ;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15;
+         white-space: nowrap;
+
+        }
+        .upload-button:hover .jhatka {
+          opacity: 1;
+        }
+        
+        .app-button{
+            width: 40px;
+            height: 30px;
+            margin-top: 10px;
+             margin-left: 8px;
+            margin-right: 8px;
+        }
+        .notification-logo{
+             width: 40px;
+            height: 30px;
+             margin-top: 10px;
+
+        }
+        /* .notification-logo .tooltip{
+          position: absolute;
+        background-color: gray;
+        color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-top:4px ;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -45px;
+        opacity: 0;
+        transition: opacity 0.15;
+        }
+        .notification-logo:hover .tooltip {
+           opacity: 1;
+
+        } */
+        .notification-logo-containter {
+          position: relative;
+        }
+        .notifications-count{
+          position: absolute;
+          top: 5px;
+          right:0px ;
+          
+          
+          background-color: red;
+          color: white;
+          font-family: arial;
+          font-size: 10px;
+          padding-left: 4px;
+          padding-right: 4px;
+          padding-bottom: 2px;
+          padding-top: 2px;
+          border-radius: 10px;
+        }
+        .small-photo {
+                  width: 40px;
+            height: 30px;
+                margin-left: 8px;
+                 margin-top: 10px;
+           
+        }
+        .side-bar {
+          /* width: 70px; */
+          /* background-color: blue; */
+          top:55px;
+          bottom: 0px;
+          left:0;
+          position: fixed;
+          /* border-bottom-style: solid;
+          border-bottom-color: rgb(10, 129, 28);
+          border-width: 1px; */
+          border-color: rgb(226, 220, 220);
+       border-style: solid;
+        border-radius: 1px;
+              justify-content: space-between;
+              cursor:pointer;
+        }
+        .pp-home {
+          width: 30px;
+          padding-left: 8px;
+        /* margin-bottom: 3px; */
+
+        }
+        .pp-explore{
+          width: 30px;
+          padding-left: 5px;
+        }
+        .pp-subscriptions{
+          width: 30px;
+          padding-left: 5px;
+        }
+        .pp-original{
+          width: 30px;
+          padding-left: 5px;
+        }
+        .pp-youtube-music{
+          width: 30px;
+          padding-left: 5px;
+        }
+        .pp-library{
+          width: 30px;
+          padding-left: 5px;
+        }
+        .wr-home{
+          padding-left: 9px;
+          font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        /* margin-bottom: 8px; */
+          ;
+        }
+        .wr-explore{
+          padding-left: 8px;
+          font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+        .wr-subscriptions{
+          padding-left: 0px;
+          font-size: 11px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+        .wr-original{
+          padding-left: 4px;
+          font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+        .wr-youtube-music{
+          padding-left: 5px;
+          font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+        .wr-library{
+          padding-left: 5px;
+          font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        }
+        .sp-home {
+          height: 70px;
+          margin-top: 8px;
+        }
+        .sp-explore{
+          height: 70px;
+          margin-top: 8px;
+        }
+        .sp-subscriptions {
+          height: 70px;
+          margin-top: 8px;
+        }
+        .sp-original{
+          height: 70px;
+          margin-top: 8px;
+        }
+        .sp-youtube-music {
+          height: 70px;
+          margin-top: 8px;
+        }
+        .sp-library {
+          height: 70px;
+          margin-top: 15px;
+        }
